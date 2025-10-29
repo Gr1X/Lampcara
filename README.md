@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# LAMPCARA - Proyek UAS Introduction to Internet Technology
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Selamat datang di **LAMPCARA**, sebuah aplikasi web pariwisata interaktif yang didedikasikan untuk provinsi Lampung.
 
-## Available Scripts
+Proyek ini dibuat untuk memenuhi tugas **Ujian Akhir Semester (UAS) mata kuliah Introduction to Internet Technology**. Aplikasi ini dibangun sebagai *Single Page Application* (SPA) menggunakan **React.js** dan mengintegrasikan berbagai API modern untuk menyajikan data yang dinamis dan pengalaman pengguna yang kaya.
 
-In the project directory, you can run:
+## 🌟 Fitur Utama
 
-### `npm start`
+* **Halaman Utama (Home):**
+    * Video *hero section* yang sinematik.
+    * Galeri foto destinasi dan penjelasan motto Lampung ("Sang Bumi Ruwai Jurai").
+    * *Slider* interaktif untuk 10 destinasi unggulan.
+    * Grid kartu untuk semua 16 destinasi.
+* **Halaman Wisata (Wisata):**
+    * Peta interaktif dari **MapTiler** untuk setiap destinasi.
+    * Deskripsi lengkap dan gambar untuk 16 lokasi wisata.
+    * Integrasi video YouTube (diambil via **YouTube Data API**).
+* **Halaman About Us:**
+    * Profil tim pengembang (Kelompok 8) dengan tautan media sosial.
+* **Halaman Contact Us:**
+    * Formulir kontak fungsional yang terhubung ke **Google Sheets** via **SheetDB**.
+    * Notifikasi *popup* menggunakan **SweetAlert2** saat formulir terkirim.
+* **Komponen Global:**
+    * *Navbar* dinamis yang berubah tampilan saat *scroll* (Bootstrap Offcanvas).
+    * *Widget* cuaca *real-time* di *footer* menggunakan **OpenWeatherMap API**.
+    * Animasi *scroll* yang halus di seluruh halaman menggunakan **AOS**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Teknologi & API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Framework:** React.js
+* **Routing:** React Router DOM
+* **Styling:** CSS Murni & Bootstrap 5
+* **Animasi:** AOS (Animate On Scroll)
+* **Notifikasi:** SweetAlert2
+* **Request API:** Axios
+* **Peta:** MapTiler SDK
+* **Cuaca:** OpenWeatherMap API
+* **Video:** YouTube Data API v3
+* **Formulir:** SheetDB (Google Sheets)
 
-### `npm test`
+## 👨‍💻 Tim Pengembang (Kelompok 8)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **Kelvin Jonathan Setiawan**
+* **Gregorius Frederico** 
+* **Gadiel Narain**
+* **Kent Seanly Teguh**

@@ -1,46 +1,54 @@
-# LAMPCARA - Proyek UAS Introduction to Internet Technology
+# LAMPCARA - Lampung Tourism Website
 
-Selamat datang di **LAMPCARA**, sebuah aplikasi web pariwisata interaktif yang didedikasikan untuk provinsi Lampung.
+**LAMPCARA** is an interactive tourism guide website dedicated to the province of Lampung, Indonesia.
 
-Proyek ini dibuat untuk memenuhi tugas **Ujian Akhir Semester (UAS) mata kuliah Introduction to Internet Technology**. Aplikasi ini dibangun sebagai *Single Page Application* (SPA) menggunakan **React.js** dan mengintegrasikan berbagai API modern untuk menyajikan data yang dinamis dan pengalaman pengguna yang kaya.
+This project was built as the **Final Exam (UAS) for the "Introduction to Internet Technology"** course. It is a Single Page Application (SPA) developed using React.js, designed to showcase Lampung's beautiful destinations by integrating dynamic data from multiple external APIs.
 
-## 🌟 Fitur Utama
+## 🌟 Key Features
 
-* **Halaman Utama (Home):**
-    * Video *hero section* yang sinematik.
-    * Galeri foto destinasi dan penjelasan motto Lampung ("Sang Bumi Ruwai Jurai").
-    * *Slider* interaktif untuk 10 destinasi unggulan.
-    * Grid kartu untuk semua 16 destinasi.
-* **Halaman Wisata (Wisata):**
-    * Peta interaktif dari **MapTiler** untuk setiap destinasi.
-    * Deskripsi lengkap dan gambar untuk 16 lokasi wisata.
-    * Integrasi video YouTube (diambil via **YouTube Data API**).
-* **Halaman About Us:**
-    * Profil tim pengembang (Kelompok 8) dengan tautan media sosial.
-* **Halaman Contact Us:**
-    * Formulir kontak fungsional yang terhubung ke **Google Sheets** via **SheetDB**.
-    * Notifikasi *popup* menggunakan **SweetAlert2** saat formulir terkirim.
-* **Komponen Global:**
-    * *Navbar* dinamis yang berubah tampilan saat *scroll* (Bootstrap Offcanvas).
-    * *Widget* cuaca *real-time* di *footer* menggunakan **OpenWeatherMap API**.
-    * Animasi *scroll* yang halus di seluruh halaman menggunakan **AOS**.
+* **Dynamic Home Page:** A media-rich landing page featuring a background video, a CSS grid image gallery, and an interactive "Highlight" destination slider.
+* **Interactive Tourism Page (`Wisata`):**
+    * **Detailed Listings:** Renders all 16 tourist destinations from a central data file (`Wisata.jsx`).
+    * **Interactive Maps:** Each destination features an interactive map from the **MapTiler SDK**, pinpointing its exact latitude and longitude.
+    * **Video Showcase:** Includes an embedded YouTube video with its description fetched dynamically using the **YouTube Data API**.
+* **Real-time Weather:** A weather widget in the footer displays the current weather in "Lampung" using the **OpenWeatherMap API**.
+* **Functional Contact Form:** A "Contact Us" modal that submits user feedback directly to a **Google Sheet** via the **SheetDB API**.
+* **Modern UI/UX:**
+    * **Responsive Design:** A sticky, responsive navbar (using Bootstrap 5 Offcanvas) that changes appearance on scroll.
+    * **Scroll Animations:** Smooth fade and zoom animations powered by **AOS (Animate On Scroll)**.
+    * **User-Friendly Alerts:** Uses **SweetAlert2** for clean, modern notifications on form submission.
+* **About Us Page:** Introduces the development team (Group 8) with links to their social media.
 
-## 🛠️ Teknologi & API
+## 🛠️ Tech Stack & APIs Used
 
-* **Framework:** React.js
-* **Routing:** React Router DOM
-* **Styling:** CSS Murni & Bootstrap 5
-* **Animasi:** AOS (Animate On Scroll)
-* **Notifikasi:** SweetAlert2
-* **Request API:** Axios
-* **Peta:** MapTiler SDK
-* **Cuaca:** OpenWeatherMap API
-* **Video:** YouTube Data API v3
-* **Formulir:** SheetDB (Google Sheets)
+* **Core:** React.js, React Router DOM
+* **Styling:** CSS 3 (Pure CSS) & Bootstrap 5
+* **API Client:** Axios
+* **Animations:** AOS (Animate On Scroll)
+* **Alerts:** SweetAlert2
+* **Icons:** Font Awesome, React Icons
 
-## 👨‍💻 Tim Pengembang (Kelompok 8)
+### External APIs
 
-* **Kelvin Jonathan Setiawan**
-* **Gregorius Frederico** 
+* **Maps:** MapTiler SDK
+* **Weather:** OpenWeatherMap API
+* **Video Data:** YouTube Data API v3
+* **Form Handling:** SheetDB (Google Sheets)
+
+---
+
+## 🔐 IMPORTANT: API Key Security Warning
+
+**Warning:** As of this commit, all API keys (for MapTiler, OpenWeather, YouTube) and the SheetDB URL are **hard-coded** directly into the `.jsx` components.
+
+This is a major security risk. Anyone with access to this code can steal and misuse your keys.
+
+You **MUST** secure them using environment variables before deploying this project or making the repository public.
+
+
+## 👨‍💻 Development Team (Group 8)
+
+* **Kelvin Jonathan Setiawan** 
+* **Gregorius Frederico**
 * **Gadiel Narain**
 * **Kent Seanly Teguh**
